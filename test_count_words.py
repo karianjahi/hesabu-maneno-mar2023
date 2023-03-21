@@ -6,7 +6,7 @@ import pytest
 from counter import WordCounter
 
 
-# pylint:disable=R0201
+
 # pylint:disable=E0401
 class TestWordCounter:
     """
