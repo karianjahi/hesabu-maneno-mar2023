@@ -2,6 +2,7 @@
 Counter for words
 """
 # pylint: disable=W0104
+# pylint: disable=E0401
 from bs4 import BeautifulSoup
 
 
