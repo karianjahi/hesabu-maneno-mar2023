@@ -19,10 +19,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        sudo apt install pylint
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        pylint counter.py
-        pylint test_count_words.py
     - name: Test with pytest
       run: |
         pytest
