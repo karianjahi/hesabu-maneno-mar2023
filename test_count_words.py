@@ -5,12 +5,14 @@ import pytest
 
 from counter import WordCounter
 
+
 # pylint:disable=R0201
 # pylint:disable=E0401
 class TestWordCounter:
     """
     Testing WordCounter class
     """
+
     def test_blank(self):
         """
         test empty
