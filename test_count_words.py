@@ -5,6 +5,7 @@ import pytest
 
 from counter import WordCounter
 
+# pylint:disable=R0201
 
 class TestWordCounter:
     """
@@ -43,10 +44,14 @@ class TestWordCounter:
         assert WordCounter().count_words(string) == 6
 
     def test_html_with_attrs(self):
+        """
+        Test html with attributes
+        """
         string = '<p class="headers-special"> This is my only kept secret </p>'
         assert WordCounter().count_words(string) == 6
 
     def test_wrong_instance(self):
+        "Test wrong instance"
         string = {"text": "I have a dream"}
         with pytest.raises(Exception) as error:
             WordCounter().count_words(string)

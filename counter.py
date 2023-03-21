@@ -1,7 +1,7 @@
 """
 Counter for words
 """
-
+# pylint: disable=W0104
 from bs4 import BeautifulSoup
 
 
@@ -9,12 +9,6 @@ class WordCounter:
     """
     class that counts words
     """
-
-    def __init__(self):
-        """
-        class constructor
-        """
-        pass
 
     def __str__(self):
         return 'Words counted'
@@ -44,8 +38,8 @@ class WordCounter:
 
 
 if __name__ == "__main__":
-    inst = WordCounter()
+    INSTANCE = WordCounter()
     # string = "<p> Python is my favourite programming language </p>"
-    string = "<p>python</p>"
-    print(inst.count_words(string))
+    STRING = "<p>python</p>"
+    print(INSTANCE.count_words(STRING))
     # print(inst.run_text_through_html_filter(string))
